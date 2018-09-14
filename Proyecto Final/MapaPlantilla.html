@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Poke-Mapa!</title>
+        <link rel="shortcut icon" type="image/x-icon" href="PkExpotadosHtml/mapa.ico" />
+		<link rel="stylesheet" href="PkExpotadosHtml/styles/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	</head>
+	<body>
+		<h1>Mapa Pokemon</h1>
+		
+		<div id="divMap" class="map map-home" style="margin:12px 0 12px 0;height:80%;"></div>
+		<script>
+			var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+				osmAttrib = '&copy; <a href="https://www.instagram.com/its.me_enmah/">Enmanuel</a> contributors',
+				osm = L.tileLayer(osmUrl, {maxZoom: 15, attribution: osmAttrib});
+			var map = L.map('divMap').setView([19.4398315,-70.8132746], 8).addLayer(osm);
+			
+            {marcacdores}
+            
+		</script>
+  </body>
+</html>

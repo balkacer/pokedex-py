@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Poke-Mapa!</title>
+        <link rel="shortcut icon" type="image/x-icon" href="PkExpotadosHtml/mapa.ico" />
+		<link rel="stylesheet" href="PkExpotadosHtml/styles/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	</head>
+	<body>
+		<h1>Mapa Pokemon</h1>
+		
+		<div id="divMap" class="map map-home" style="margin:12px 0 12px 0;height:80%;"></div>
+		<script>
+			var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+				osmAttrib = '&copy; <a href="https://www.instagram.com/its.me_enmah/">Enmanuel</a> contributors',
+				osm = L.tileLayer(osmUrl, {maxZoom: 15, attribution: osmAttrib});
+			var map = L.map('divMap').setView([19.4398315,-70.8132746], 8).addLayer(osm);
+			
+            L.marker([18.5215937,-70.465356])
+    .addTo(map)
+    .bindPopup('Hola soy Pikachu y tengo 18 años.'); L.marker([19.6299616,-71.5214168])
+    .addTo(map)
+    .bindPopup('Hola soy Onix y tengo 15 años.'); L.marker([19.1742571,-69.7159287])
+    .addTo(map)
+    .bindPopup('Hola soy Pichu y tengo 5 años.'); L.marker([17.9061361,-72.0753488])
+    .addTo(map)
+    .bindPopup('Hola soy Pidgey y tengo 20 años.'); L.marker([19.7896057,-70.7211021])
+    .addTo(map)
+    .bindPopup('Hola soy Bulbasaur y tengo 45 años.'); L.marker([18.2811901,-70.3482326])
+    .addTo(map)
+    .bindPopup('Hola soy Chansey y tengo 43 años.'); L.marker([19.4504129,-71.9071852])
+    .addTo(map)
+    .bindPopup('Hola soy Raichu y tengo 19 años.'); L.marker([19.0498221,-70.1660511])
+    .addTo(map)
+    .bindPopup('Hola soy Charmander y tengo 15 años.'); L.marker([19.3936356,-70.5402267])
+    .addTo(map)
+    .bindPopup('Hola soy Rattata y tengo 18 años.'); L.marker([18.1949462,-71.4837284])
+    .addTo(map)
+    .bindPopup('Hola soy Pichu y tengo 3 años.'); L.marker([18.4328596,-69.0425617])
+    .addTo(map)
+    .bindPopup('Hola soy Squirtle y tengo 19 años.'); L.marker([18.9296467,-70.4406606])
+    .addTo(map)
+    .bindPopup('Hola soy Diglett y tengo 14 años.');
+            
+		</script>
+  </body>
+</html>
